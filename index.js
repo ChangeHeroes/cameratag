@@ -1920,7 +1920,6 @@ if (typeof(CameraTag) == "undefined") {
 
 
 
-
   //
   // TIP THE FIRST DOMINO
   //
@@ -1943,3 +1942,5 @@ if (typeof(CameraTag) == "undefined") {
     CameraTag.setup();
   });
 }
+
+module.exports = CameraTag;
