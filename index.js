@@ -2292,3 +2292,5 @@ if (typeof(CameraTag) == "undefined") {
     CameraTag.setup();
   });
 }
+
+module.exports = CameraTag;
