@@ -11,6 +11,6 @@
   "author": {
   },
   "devDependencies": {
-    "jquery": "^1.11.3"
+    "jquery": "^2.2.3"
   }
 }
