@@ -762,6 +762,24 @@ if (typeof(CameraTag) == "undefined") {
             var settings_btn = $('<img class="cameratag_settings_btn" src="//cameratag.com/assets/gear.png">');
             start_screen.append(settings_btn);  
           }
+        } else {
+          var start_screen_options = start_screen.find('.cameratag_record_options')
+          if (start_screen_options.length > 0) {
+            if (sources.indexOf("record") != -1 && !mobile_enabled) {
+              var record_btn = $('<a class="cameratag_primary_link cameratag_record_link cameratag_record"><span class="cameratag_action_icon">&#61501;</span><br><span class="cameratag_prompt_label">'+CT_i18n[5]+'</span></a>');
+              start_screen_options.append(record_btn);
+            }
+
+            if (sources.indexOf("upload") != -1 && !mobile_enabled) {
+              var upload_btn = $('<a id="'+dom_id+'_upload_link" class="cameratag_primary_link cameratag_upload_link cameratag_upload"><span class="cameratag_action_icon">&#61678;</span><br><span class="cameratag_prompt_label">'+CT_i18n[6]+'</span></a>');
+              start_screen_options.append(upload_btn);
+            }
+
+            if (sources.indexOf("sms") != -1 || mobile_enabled) {
+              var sms_btn = $('<a class="cameratag_primary_link cameratag_sms_link"><span class="cameratag_action_icon">&#61707;</span><br><span class="cameratag_prompt_label">'+CT_i18n[7]+'</span></a>');
+              start_screen_options.append(sms_btn);
+            }
+          }
         }
         // add to DOM
         container.append(start_screen);
