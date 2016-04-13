@@ -763,7 +763,7 @@ if (typeof(CameraTag) == "undefined") {
             start_screen.append(settings_btn);  
           }
         } else {
-          var start_screen_options = start_screen.find('.cameratag_record_options')
+          var start_screen_options = start_screen.find('.cameratag_record_options');
           if (start_screen_options.length > 0) {
             if (sources.indexOf("record") != -1 && !mobile_enabled) {
               var record_btn = $('<a class="cameratag_primary_link cameratag_record_link cameratag_record"><span class="cameratag_action_icon">&#61501;</span><br><span class="cameratag_prompt_label">'+CT_i18n[5]+'</span></a>');
