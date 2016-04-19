@@ -8,8 +8,10 @@
     "url": "https://github.com/ChangeHeroes/cameratag.git"
   },
   "author": {},
-  "devDependencies": {
+  "dependencies": {
     "evaporate": "^1.1.1",
     "jquery": "^2.2.3"
+  },
+  "devDependencies": {
   }
 }
