@@ -3970,3 +3970,5 @@ CameraTagVideo = function(video_el) {
     CameraTag.setup();
   });
 }
+
+module.exports = CameraTag;
