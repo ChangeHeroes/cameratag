@@ -3,6 +3,7 @@
 //
 // CameraTag
 //
+var Evaporate = require('evaporate');
 
 if (typeof(CameraTag) == "undefined") {
   CameraTag = new function() {
