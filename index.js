@@ -1427,10 +1427,10 @@ if (typeof(CameraTag) == "undefined") {
       // state = "uploading";
       // uploading = true; // andorid doesn't seem to get this set through the uploadStarted event?
       CameraTag.fire(dom_id, "uploadStarted");
-      // upload_screen.show();
-      // // start_screen.hide();
-      // start_screen.css("left", "-10000px");
-      // start_screen.css("right", "10000px");
+       upload_screen.show();
+       // start_screen.hide();
+       start_screen.css("left", "-10000px");
+       start_screen.css("right", "10000px");
 
       var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1; //&& ua.indexOf("mobile");
       if (isAndroid) {
