@@ -1897,15 +1897,7 @@ if (typeof(CameraTag) == "undefined") {
                 deviceId: selected_cam_id,
                 width: hResolution,
                 height: vResolution,
-                aspectRatio: aspect_ratio,
-                optional: [
-                  {minAspectRatio: aspect_ratio},
-                  {maxAspectRatio: aspect_ratio},
-                  {minWidth: hResolution},
-                  {minHeight: vResolution},
-                  {maxWidth: hResolution},
-                  {maxHeight: vResolution}
-                ]
+                aspectRatio: aspect_ratio
             }
         }, function(stream) {
             wrtc_stream = stream;
@@ -2509,7 +2501,6 @@ CameraTagVideo = function(video_el) {
   var input_name;
   var metadata_object;
   var errors = [];
-
   var WebRTCBooth = function(placeholder_el) {
     var self = this;
     var video_el;
@@ -2561,12 +2552,6 @@ CameraTagVideo = function(video_el) {
           deviceId: selected_cam_id,
           width: hResolution,
           height: vResolution,
-          optional: [
-            {minWidth: hResolution},
-            {minHeight: vResolution},
-            {maxWidth: hResolution},
-            {maxHeight: vResolution}
-          ]
         }
       },
       function(new_stream) {
